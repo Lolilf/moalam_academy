@@ -100,6 +100,7 @@ color: var(--main-color);
 }
 .header .container nav{
     display: flex;
+    z-index: 2;
 }
 .header .container nav ul{
     display: flex;
@@ -113,7 +114,7 @@ color: var(--main-color);
     transition: 0.3s;
 }
 .header .container nav li a:hover{
-    color: var(--secondrey-color);
+    color:var(--secondrey-color);
 
 }
 .header .container .contact a{
@@ -150,8 +151,8 @@ color: var(--main-color);
         flex-direction: column;
         top: 100%;
         position: absolute;
-        width: 50%;
-        background-color: #00a9ce0f;
+        width: 100%;
+        background-color:var(--secondrey-color);
         left: 0;
     }
     .header .container nav li a{
@@ -173,6 +174,7 @@ color: var(--main-color);
 .landing{
     padding-top: var(--main-padding);
     background-color: var(--section-background);
+    position: relative;
 }
 .landing .container{
     display: flex;
@@ -423,11 +425,11 @@ margin-top: 30px;
     background-color: var(--main-color);
     color: white;
 }
-.teachers .teachers-box .teacher-box:hover .footer .social .icon i,
-.teachers .teachers-box .teacher-box:hover .footer .head h3{
+.teachers .teachers-box .teacher-box:hover .footers .social .icon i,
+.teachers .teachers-box .teacher-box:hover .footers .head h3{
     color: white;
 }
-.teachers .teachers-box .teacher-box:hover .footer .social i{
+.teachers .teachers-box .teacher-box:hover .footers .social i{
     color: white;
 }
 .teachers .teachers-box .info{
@@ -455,14 +457,14 @@ margin-top: 30px;
 .teachers .teachers-box .info .rate i:not(:last-child){
     color:  rgb(255, 193, 7);
 }
-.teachers .teachers-box .teacher-box .footer {
+.teachers .teachers-box .teacher-box .footers {
     margin-top: 10px;
 }
-.teachers .teachers-box .teacher-box .footer .head{
+.teachers .teachers-box .teacher-box .footers .head{
     display: flex;  
     justify-content: space-between;
 }
-.teachers .teachers-box .teacher-box .footer .head h3{
+.teachers .teachers-box .teacher-box .footers .head h3{
     flex-basis: 45%;
     margin-bottom: 10px;
     color: var(--secondrey-color);
@@ -472,25 +474,34 @@ margin-top: 30px;
         flex-direction: column;
         text-align: center;
     }
+    .teachers .teachers-box .teacher-box .footers .head h3{
+        font-size: 17px;
+    }
+    .teachers .teachers-box .teacher-box .footers .social p{
+        font-size: 12px;
+    }
     .teachers .teachers-box .info .text p{
-        font-size: 11px;
+        font-size: 13px;
         font-weight: bold;
     }
     .teachers .teachers-box .info h3 {
     font-size: 18px;
 }
+.teachers .teachers-box .teacher-box .footers .social .icon i{
+    font-size: 13px !important;
 }
-.teachers .teachers-box .teacher-box .footer .social{
+}
+.teachers .teachers-box .teacher-box .footers .social{
     display: flex;
     justify-content: space-between;
 }
-.teachers .teachers-box .teacher-box .footer .social p{
+.teachers .teachers-box .teacher-box .footers .social p{
     flex-basis: 45%;
 }
-.teachers .teachers-box .teacher-box .footer .social .icon{
+.teachers .teachers-box .teacher-box .footers .social .icon{
     flex-basis: 45%;
 }
-.teachers .teachers-box .teacher-box .footer .social .icon i{
+.teachers .teachers-box .teacher-box .footers .social .icon i{
     color: var(--main-color);
     font-size: 20px;
     margin-right: 10px;
